@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #81616C;
+}
+
+#main #mtext{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#mtext h1{
+    user-select: none;
+    white-space: nowrap;
+    font-family: "Voyage";
+    font-size: 8vw;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#mtext h3{
+    user-select: none;
+    white-space: nowrap;
+    font-family: "Voyage";
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#left{
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+#nav{
+    width: 100%;
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    color: wheat;
+    gap: 130px;
+}
+
+#nav h3{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 3px;
+    
+}
+
+#nav a{
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: wheat;
+    font-size: 14px;
+    font-weight: 450;
+}
+
+#centerimg{
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    top: 130px;
+    left: 150px;
+    background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#centerimg #text{
+    display: flex;
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+    color: wheat;
+}
+
+#text #parts{
+    width: 30%;
+}
+
+#parts h5{
+    line-height: 13px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#text #para{
+    width: 70%;
+}
+
+#para p{
+    font-weight: 400;
+    line-height: 13px;
+    font-size: 12px;
+}
+
+#scroll{
+    position: absolute;
+    bottom: -7%;
+    left: 20px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#scroll h4{
+    letter-spacing: 7px;
+    font-weight: 500;
+    color: wheat;
+    font-size: 15px;
+}
+
+#scroll #line{
+    width: 150px;
+    height: 2px;
+    background-color: wheat;
+}
+
+#center{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1621784563330-caee0b138a00?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#upnext{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 63%;
+    right: 0%;
+}
+
+#upnext h4{
+    padding-right: 25px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+}
+
+#upnext #unline{
+    display: flex;
+    width: 150px;
+    height: 2px;
+}
+
+#unline #unlineleft{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+}
+
+#unline #unlineright{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+
+#center #card{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 180px;
+    top: 70%;
+    left: 85%;
+    z-index: 9999;
+}
+
+#card #cicons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+    background-color: white;
+    height: 100%;
+    padding: 20px;
+}
+
+#card #rcard{
+    width: 180px;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1705969351563-8686c3e50fae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#right{
+    width: 10%;
+    height: 100%;
+}
+
+#relem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+    height: 70%;
+}
+
+#relem i{
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#relem #relemlinks{
+    display: flex;
+    gap: 50px;
+    transform: translateY(-200px) rotate(90deg);
+}
+
+#relemlinks a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+}
